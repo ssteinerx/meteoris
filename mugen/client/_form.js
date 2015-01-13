@@ -19,7 +19,7 @@ String.prototype.toProperCase = function() {
 };
 
 Template.mugen_form.events = {
-    'keyup #collection': function(e) {
+    'blur #collection': function(e) {
         var collection = $(e.target).val();
         $(e.target).val(collection.toCollectionCase());
 
